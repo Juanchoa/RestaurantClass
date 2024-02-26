@@ -1,3 +1,5 @@
+require('./DataBase/sync.js');
+
 const connection = require('./DataBase/connection.js');
 const express = require('express');
 const app = express();
@@ -10,7 +12,7 @@ app.listen(port, ()=>{
     console.log("The app is running on port "+ port);
 });*/
 
-connection.sync()
+connection.sync({force: false})
    .then(()=>{
         console.log('Base de datos sincronizada');
         app.listen(port,()=>{

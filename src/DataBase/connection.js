@@ -1,7 +1,7 @@
 const {Sequelize} = require('sequelize');
 var database = 'TIM';
-var username = '//el user name de mi postgres';
-var password = '//la contraseña de mi postgres';
+var username = 'postgres';
+var password = 'Televicion1?';
 
 const connection = new Sequelize(database, username, password,{
 
