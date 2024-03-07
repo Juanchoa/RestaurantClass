@@ -32,7 +32,6 @@ restaurantId:{
     modelName: 'product',
     paranoid: true,
     deletedAt: 'destroyTime'
-
 });
 
 module.exports = product; 
